@@ -28,13 +28,4 @@
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
   },{threshold:.16});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
-  // mock contact form
-  var form=document.getElementById('contactForm');
-  if(form){
-    form.addEventListener('submit',function(e){
-      e.preventDefault();
-      var n=document.getElementById('formNote');
-      if(n)n.textContent='Thanks — in a live build this would send your message. (Mock only.)';
-    });
-  }
 })();
