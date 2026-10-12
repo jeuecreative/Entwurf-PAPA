@@ -254,6 +254,8 @@ footer{background:var(--ink);color:var(--silver-2);padding:54px 0 40px;border-to
 .foot-tag{max-width:34ch;font-size:.92rem;color:var(--silver-2);margin-top:14px}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line-light);padding-top:22px}
 .foot-meta{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;color:var(--steel-soft)}
+.foot-credit a{color:var(--silver-2);border-bottom:1px solid currentColor;padding-bottom:1px;transition:color .2s}
+.foot-credit a:hover{color:var(--accent-bright)}
 
 /* ---------- reveal (gated on JS so content stays visible without it) ---------- */
 .js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
